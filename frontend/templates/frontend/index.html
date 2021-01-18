@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+{% load static%}
+<!--
+***************************************************************
+AUTHOR : CKavArt
+PROJECT : Ira One Page Creative HTML Template
+
+NOTE : This file licensed to CKavArt - https://themeforest.net/user/c-kav and it is strictly prohibited to copy or reuse it.
+
+Copyright 2017-2018 CKavArt
+***************************************************************
+-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=""/>
+	<meta name="keywords" content="">
+	<meta name="author" content="CKavArt">
+
+	<title>RM - The Human Resource Management Ltd</title>
+
+	<!-- FONT-ICONS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/et-line-font/style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/Icon-font-7-stroke-PIXEDEN/css/pe-icon-7-stroke.css'%}">
+
+	<!-- LIB -->
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/animation/animate.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/page-animsition/css/animsition.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/owl-carousel/owl.carousel.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/sweetalert/sweetalert.css'%}">
+
+	<!-- TEMPLATE -->
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/bootstrap/bootstrap-v3.3.7/css/bootstrap.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/ckav-grids.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/helper.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css'%}">
+
+	<!-- THEMES -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/themes/theme-01.css'%}">
+
+	<!-- CUSTOME -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/custom.css'%}">
+
+	<!-- Favicons -->
+	<link rel="icon" href="{% static 'new-images/favicon.png'%}">
+	<link rel="icon apple-touch-icon" type="image/png" href="{% static 'images/favicons/apple-icon.png'%}">
+	<link rel="icon apple-touch-icon" type="image/png" sizes="72x72" href="{% static 'images/favicons/apple-icon-72x72.png'%}">
+	<link rel="icon apple-touch-icon" type="image/png" sizes="114x114" href="{% static 'images/favicons/apple-icon-114x114.png'%}">
+
+</head>
+<body>
+
+	<!-- MAIN-WRAPPER -->
+	<div class="ckav-mainwrapper">
+
+		<!-- HEADER -->
+		<header class="main-head dark bg-glass-dark-01" data-sticky="y">
+			<div class="container flex-cc min-px-h80">
+
+				<div class="flex-row gt0 middle-md w100">
+
+					<!-- LOGO -->
+					<div class="flex-col-md-3 pos-rel">
+						<a class="nav-handle" data-nav=".m-content" data-navopen="pe-7s-more" data-navclose="pe-7s-close"><i class="pe-7s-more"></i></a>
+						<div class="header-logo-wrp">
+							<a class="header-logo pd-tb-small" href="{% url 'home'%}"><img src="{%static 'new-images/logo.png'%}" alt="Brand logo"></a>
+						</div>
+					</div>
+					<!-- / LOGO -->
+
+					<!-- NAVIGATION -->
+					<div class="flex-col-md-9 align-r m-content">
+						<ul class="inline-grid grid-mid menu-wrp">
+
+							<!-- NAVIGATION-LINKS -->
+							<li>
+								<nav class="align-l">
+									<ul class="menu">
+										<li class="menu-item"><a href="#about">About us</a></li>
+										<li class="menu-item"><a href="#services">Services</a></li>
+										<li class="menu-item"><a href="#story">Our story</a></li>
+										<li class="menu-item"><a href="#team">Team</a></li>
+										<li class="menu-item"><a href="#vacancies">Vacancies</a></li>
+
+									</ul>
+								</nav>
+							</li><!-- / NAVIGATION-LINKS -->
+
+							<!-- NAVIGATION-BUTTONS -->
+							<li class="pd-l-20 menu-item" data-ckav-sm="pd-0 pd-t-10 align-c">
+								<a href="#contact" class="btn btn-white mini mr-r-6" data-ckav-sm="block mr-0"><i class="far fa-envelope-open mr-r-6"></i> CONTACT US</a>
+								<a href="{% url 'upload_cv'%}" class="btn btn-default solid mini" data-ckav-sm="block"><i class="pe-7s-cloud-upload mr-r-6"></i> Upload your CV</a>
+							</li>
+							<!-- / NAVIGATION-BUTTONS -->
+
+						</ul>
+
+					</div>
+					<!-- / NAVIGATION -->
+
+				</div>
+
+			</div>
+
+		</header>
+		<!-- / HEADER -->
+
+		<!-- INTRO-SECTION -->
+		<section id="home" style = "background:url('static/new-images/bg-op.jpg') no-repeat #001923; background-position:center" class="pos-rel flex-cc vh100 pd-tb-medium parallax" data-ckav-sm="pd-tb-small align-c h-reset">
+
+			<div class="container pd-tb-small align-c" data-ckav-sm="pd-tb-small">
+				<div class="max-px-w500 mr-auto typo-light">
+					<h2 class="title large f-1 bold-3 lh-3" data-ckav-sm="large">A proven process. Outstanding Results.</h2>
+
+					<hr class="light bdr-op-light-4">
+
+					<p class="title-sub mini" data-ckav-sm="small">Whether you are looking at what’s next for your career or have an immediate gap to fill, as market leader we remain committed to working together with you.</p>
+
+					<a href="#vacancies" data-ckav-sm="small" class="btn btn-white solid bdr-2 rd-6">Find Jobs</a>
+				</div>
+			</div>
+
+			<!-- IMAGE OVERLAY -->
+			<b class="full-wh z1 bg-dark op-06"></b>
+			<!-- / IMAGE OVERLAY -->
+
+			<!-- BACKGROUND IMAGE -->
+			<div class="full-vh bg-tc bg-cover" data-stellar="y" data-stellar-ratio="0.8" data-ckav-sm="h100" data-bg="images/bg-img-01.jpg"></div>
+			<!-- / BACKGROUND IMAGE -->
+		</section>
+		<!-- / INTRO-SECTION -->
+
+		<!-- ABOUT-SECTION -->
+		<section id="about" class="pd-tb-medium pos-rel bg-dark typo-light" data-ckav-sm="pd-tb-small">
+			<div class="container pos-rel z1">
+
+				<div class="w75 mr-auto align-c">
+					<h2 class="title f-1 bold-3" data-ckav-sm="small">About us</h2>
+					<p class="title-sub mini" data-ckav-sm="small">RM Human Resource Limited is an Irish based company. It is one of Ireland’s leading recruitment agency with over 3 years’ experience. RM Human Resource Limited is a trusted agency that is specialized in offering recruitment solutions to companies and organisations, also, providing work permit consultation and aims to accommodate clients with long-term employment, world-wide.</p>
+				</div>
+
+				<img style="width:60%" src="{%static 'new-images/about-us.jpg'%}" class="mr-auto mr-b-mini rd-4" alt="image">
+
+				<div class="flex-row gt30 mb20">
+
+					<!-- INFO-BOX -->
+					<div class="flex-col-md-6">
+						<div class="info-obj img-t g20 tiny mr-0 bdr-1 bdr-op-light-2 pd-tiny rd-6">
+							<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-world"></i></span></div>
+							<div class="info">
+								<h3 class="title mini f-1 bold-3"> I’M LOOKING FOR A JOB</h3>
+								<p class="mr-0">RM works closely with our candidates to ensure that the opportunities they are considering are the best ones available in the marketplace.</p>
+							</div>
+						</div>
+					</div>
+					<!-- / INFO-BOX -->
+
+					<!-- INFO-BOX -->
+					<div class="flex-col-md-6">
+						<div class="info-obj img-t g20 tiny mr-0 bdr-1 bdr-op-light-2 pd-tiny rd-6">
+							<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-users"></i></span></div>
+							<div class="info">
+								<h3 class="title mini f-1 bold-3">I’M LOOKING FOR PEOPLE</h3>
+								<p class="mr-0">At RM we specialise in working with domestic and international organisations that want a partner to provide a bespoke solution for their recruitment needs.</p>
+							</div>
+						</div>
+					</div>
+					<!-- / INFO-BOX -->
+
+
+
+				</div>
+
+			</div>
+		</section>
+		<!-- / ABOUT-SECTION -->
+
+		<!-- SKILLS -->
+		<section id="services" class="pos-rel pd-tb-medium bg-light typo-light" data-ckav-sm="pd-tb-small">
+			<div class="container pos-rel z1">
+				<h2 class="title f-1 bold-3" data-ckav-sm="small">Services</h2>
+				<div class="flex-row gt40 mb20">
+
+					<!-- LEFT -->
+					<div class="flex-col-md-6">
+
+						<!-- ACCORDION -->
+						<div class="accordion-widget acc-style1 typo-light dark" data-acc-handle="y" data-acc-openclass="fas fa-angle-down" data-acc-closeclass="fas fa-angle-up">
+
+							<!-- ACCORDION-BLOCK -->
+							<div class="acc-block">
+								<div class="acc-hd">
+									<div class="info-obj img-l mid g20">
+										<div class="img"><span class="sq40 fs40 iconwrp"><i class="pe-7s-user"></i></span></div>
+										<h3 class="info f-1 bold-3 fs16">General Operative Work</h3>
+									</div>
+								</div>
+								<div class="acc-content">
+									<p>We provide quality and reliable workers for different industry especially general operative work.</p>
+								</div>
+							</div>
+							<!-- / ACCORDION-BLOCK -->
+
+							<!-- ACCORDION-BLOCK -->
+							<div class="acc-block">
+								<div class="acc-hd">
+									<div class="info-obj img-l mid g20">
+										<div class="img"><span class="sq40 fs40 iconwrp"><i class="pe-7s-add-user"></i></span></div>
+										<h3 class="info f-1 bold-3 fs16">Non EEA Nation Workers</h3>
+									</div>
+								</div>
+								<div class="acc-content">
+									<p>We provide workpermit consultation for non EEA nation workers.</p>
+								</div>
+							</div>
+							<!-- / ACCORDION-BLOCK -->
+
+							<!-- ACCORDION-BLOCK -->
+							<div class="acc-block">
+								<div class="acc-hd">
+									<div class="info-obj img-l mid g20">
+										<div class="img"><span class="sq40 fs40 iconwrp"><i class="pe-7s-file"></i></span></div>
+										<h3 class="info f-1 bold-3 fs16">Visa Consultation</h3>
+									</div>
+								</div>
+								<div class="acc-content">
+									<p>We provide visa consultation for non EEA nation workers.</p>
+								</div>
+							</div>
+							<!-- / ACCORDION-BLOCK -->
+
+							<!-- ACCORDION-BLOCK -->
+							<div class="acc-block">
+								<div class="acc-hd">
+									<div class="info-obj img-l mid g20">
+										<div class="img"><span class="sq40 fs40 iconwrp"><i class="pe-7s-news-paper"></i></span></div>
+										<h3 class="info f-1 bold-3 fs16">Accommodation Consultation</h3>
+									</div>
+								</div>
+								<div class="acc-content">
+									<p>We provide accommodation consultation for workers to make sure they have easy access to their work place.</p>
+								</div>
+							</div>
+							<!-- / ACCORDION-BLOCK -->
+
+							<!-- ACCORDION-BLOCK -->
+							<div class="acc-block">
+								<div class="acc-hd">
+									<div class="info-obj img-l mid g20">
+										<div class="img"><span class="sq40 fs40 iconwrp"><i class="pe-7s-vector"></i></span></div>
+										<h3 class="info f-1 bold-3 fs16"> Transport Facility for Workers</h3>
+									</div>
+								</div>
+								<div class="acc-content">
+									<p> We also provide transport facility for workers to get to their work place. </p>
+								</div>
+							</div>
+							<!-- / ACCORDION-BLOCK -->
+
+							<!-- ACCORDION-BLOCK -->
+							<div class="acc-block">
+								<div class="acc-hd">
+									<div class="info-obj img-l mid g20">
+										<div class="img"><span class="sq40 fs40 iconwrp"><i class="pe-7s-id"></i></span></div>
+										<h3 class="info f-1 bold-3 fs16">Factory Workers</h3>
+									</div>
+								</div>
+								<div class="acc-content">
+									<p>We find factory workers that will take a long term contract and work reliably.</p>
+								</div>
+							</div>
+							<!-- / ACCORDION-BLOCK -->
+
+						</div>
+						<!-- / ACCORDION -->
+
+					</div>
+					<!-- / LEFT -->
+
+					<!-- RIGHT -->
+					<div class="flex-col-md-5 flex-col-md-offset-1">
+						<img style="width:100%" src="{%static 'new-images/services.jpeg'%}" class="mr-auto mr-b-mini rd-4" alt="image">
+
+					</div>
+					<!-- / RIGHT -->
+
+				</div>
+
+			</div>
+		</section>
+		<!-- / SKILLS -->
+
+		<!-- OUR-STORY -->
+		<section style="background:url('static/new-images/our-story2.jpeg') no-repeat #001923;background-position: center" id="story" class="pd-tb-large pos-rel" data-ckav-sm="pd-tb-small align-c">
+
+			<div class="container pos-rel z1">
+
+				<!-- TEXT-CONTENT -->
+				<div class="w50 typo-light">
+					<h2 class="title bold-3 f-1 mr-b-tiny" data-ckav-sm="small">Our story</h2>
+					<p class="title-sub" data-ckav-sm="small">Established in 2016, RM Human Resource Limited established itself for jobs across Ireland initially focused in vast meat factories. The company has now expanded to provide consultations, work permit and jobs globally, around the world.
+</p>
+
+					<p class="mr-b-mini">RM Human Resource Limited reputation is based on forming long-term partnerships with the companies they aim to work with and their clients, providing them with innovative and cost effective solutions.
+					<br>This understanding and knowledge is due to the experience and quality of the team. Their highly motivated consultants are guided with a strong management panel, focused and committed to what they aim for.
+					<br>RM Human Resource Limited success is driven by the philosophy to provide high quality, professional work and service to the clients. The mission – to match the right job to the right candidate!  </p>
+					<a href="#" class="btn btn-default txt-upper solid small">Read more...</a>
+				</div>
+				<!-- / TEXT-CONTENT -->
+
+			</div>
+
+			<!-- VIDEO-BACKGROUND -->
+			<div class="bg-cover bg-cc full-wh" data-bg="images/story-img-01.jpg">
+				<b class="full-wh bg-dark op-02"></b>
+			</div>
+			<!-- / VIDEO-BACKGROUND -->
+		</section>
+		<!-- / OUR-STORY -->
+
+		<!-- TESTIMONIAL -->
+		<section id="testimonials" class="pd-tb-medium pos-rel bg-light typo-light" data-ckav-sm="pd-tb-small">
+			<div class="container align-c pos-rel z1">
+				<div class="carousel-widget ctrl-1 w75 mr-auto ctrl-light"
+					data-items="1"
+					data-pager="true"
+					data-itemrange="false"
+					data-hauto="true"
+					data-autoplay="true"
+					data-loop="true">
+					<div class="owl-carousel">
+
+						<!-- TESTIMONIAL-BLOCK -->
+						<div class="item">
+							<div class="info-obj img-t g20 medium align-c">
+								<div class="img bdr-10 bdr-default shadow-small rd"><img src="{%static 'images/person1.jpg'%}" class="rd" alt="image"></div>
+								<div class="info">
+									<h3 class="f-1 bold-3 fs16 mr-0">Oupsum dolor</h3>
+									<em class="fs12">Creative Director</em>
+									<br><br>
+									<p class="fs20 bold-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+								</div>
+							</div>
+						</div>
+						<!-- / TESTIMONIAL-BLOCK -->
+
+						<!-- TESTIMONIAL-BLOCK -->
+						<div class="item">
+							<div class="info-obj img-t g20 medium align-c">
+								<div class="img bdr-10 bdr-default shadow-small rd"><img src="{%static 'images/person2.jpg'%}" class="rd" alt="image"></div>
+								<div class="info">
+									<h3 class="f-1 bold-3 fs16 mr-0">Oupsum dolor</h3>
+									<em class="fs12">Creative Director</em>
+									<br><br>
+									<p class="fs20 bold-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua diam tempor invidunt ut labore et dolore magna diam tempor invidunt ut labore et dolore magna.</p>
+								</div>
+							</div>
+						</div>
+						<!-- / TESTIMONIAL-BLOCK -->
+
+						<!-- TESTIMONIAL-BLOCK -->
+						<div class="item">
+							<div class="info-obj img-t g20 medium align-c">
+								<div class="img bdr-10 bdr-default shadow-small rd"><img src="{%static 'images/person3.jpg'%}" class="rd" alt="image"></div>
+								<div class="info">
+									<h3 class="f-1 bold-3 fs16 mr-0">Oupsum dolor</h3>
+									<em class="fs12">Creative Director</em>
+									<br><br>
+									<p class="fs20 bold-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+								</div>
+							</div>
+						</div>
+						<!-- / TESTIMONIAL-BLOCK -->
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- / TESTIMONIAL -->
+
+		<!-- TEAM-SECTION -->
+		<section id="team" class="pos-rel pd-tb-medium bg-dark typo-light" data-ckav-sm="pd-tb-small align-c">
+			<div class="container">
+
+				<div class="flex-row gt20 middle-md">
+
+					<!-- LEFT -->
+					<div class="flex-col-md-3">
+						<h2 class="title bold-3 f-1" data-ckav-sm="medium">Passionate people on our team</h2>
+						<p>Power your career power the world of work. The right people are invaluable so is the person who finds them.</p>
+					</div>
+					<!-- / LEFT -->
+
+					<!-- RIGHT -->
+					<div class="flex-col-md-8 flex-col-md-offset-1">
+						<div class="flex-row gt20 mb20">
+
+							<!-- TEAM-BOX -->
+							<div class="flex-col-md-4">
+								<div class="hover-box1">
+									<div class="overlay flex-bc typo-light align-c">
+										<div class="content mr-tb-20 z2 w75">
+											<h3 class="title bold-3 f-1 tiny mr-0">Joshim Uddin</h3>
+											<p><em class="fs12 op-08">CEO</em></p>
+											<hr class="light">
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-facebook-f"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-twitter"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-google-plus-g"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-linkedin-in"></i></a>
+										</div>
+										<b class="full-wh bg-default op-08 z1 l0"></b>
+									</div>
+									<img src="{%static 'new-images/tomal.jpeg'%}" alt="image">
+								</div>
+							</div>
+							<!-- / TEAM-BOX -->
+
+							<!-- TEAM-BOX -->
+							<div class="flex-col-md-4">
+								<div class="hover-box1">
+									<div class="overlay flex-bc typo-light align-c">
+										<div class="content mr-tb-20 z2 w75">
+											<h3 class="title bold-3 f-1 tiny mr-0">Md Mashud Rana</h3>
+											<p><em class="fs12 op-08">Consultant and project manager in Asia </em></p>
+											<hr class="light">
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-facebook-f"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-twitter"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-google-plus-g"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-linkedin-in"></i></a>
+										</div>
+										<b class="full-wh bg-default op-08 z1 l0"></b>
+									</div>
+									<img src="{%static 'new-images/mashud.jpeg'%}" alt="image">
+								</div>
+							</div>
+							<!-- / TEAM-BOX -->
+
+							<!-- TEAM-BOX -->
+							<div class="flex-col-md-4">
+								<div class="hover-box1">
+									<div class="overlay flex-bc typo-light align-c">
+										<div class="content mr-tb-20 z2 w75">
+											<h3 class="title bold-3 f-1 tiny mr-0">Munni Akter</h3>
+											<p><em class="fs12 op-08">Consultant and project manager in ireland</em></p>
+											<hr class="light">
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-facebook-f"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-twitter"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-google-plus-g"></i></a>
+											<a href="#" target="_blank" class="inline-flex sq30 flex-cc fs18"><i class="fab fa-linkedin-in"></i></a>
+										</div>
+										<b class="full-wh bg-default op-08 z1 l0"></b>
+									</div>
+									<img src="{%static 'new-images/person.jpeg'%}" alt="image">
+								</div>
+							</div>
+							<!-- / TEAM-BOX -->
+
+
+						</div>
+					</div>
+					<!-- / RIGHT -->
+
+				</div>
+			</div>
+		</section>
+		<!-- / TEAM-SECTION -->
+
+
+		<!-- BLOG-SECION -->
+		<section id="vacancies" class="bg-dark typo-light pos-rel pd-tb-medium" data-ckav-sm="pd-tb-small align-c">
+			<div class="container">
+				<div class="flex-row mb20">
+
+					<!-- LEFT -->
+					<div class="flex-col-md-3">
+						<div class="content sm-align-c">
+							<h2 class="title f-1 bold-3 mr-b-40" data-ckav-sm="medium">Latest Vacancies</h2>
+
+							<div class="info-obj img-t g0 align-l mr-b-40">
+								<div class="img"><a href="#"><img src="{%static 'images/blog-img-01.jpg'%}" alt="image"></a></div>
+								<div class="info pd-20 bdr-1 bdr-op-light-2">
+									<p class="fs12 f-2 mr-b-10"><span class="tag-text">25 Apr 2016</span></p>
+									<h3 class="bold-3 f-1 fs16 mr-b-10"><a href="#" target="_blank">Relief Worker</a></h3>
+									<p class="mr-0">Fieldfisher is a European law Firm with market leading practices in many of the world's most dynamic sectors. They have a global network of 1,700+ people working across 25 offices throughout Europe, China and Silicon Valley Ireland.</p>
+								</div>
+							</div>
+
+							<a href="dark-page-bloglist-01.html" class="btn btn-default txt-upper small">View all Vaccancies</a>
+						</div>
+
+					</div>
+					<!-- / LEFT -->
+
+					<!-- RIGHT -->
+					<div class="flex-col-md-8 flex-col-md-offset-1">
+
+						<div class="info-obj img-l mid g30" data-ckav-sm="img-t">
+							<div class="img align-c bdr-1 bdr-op-light-2 pd-10 max-px-w100">
+								<div class="min-px-w70">
+									<i class="pe-7s-paper-plane fs40"></i>
+									<hr class="mr-tb-10 light">
+									<b class="fs12 bold-1 f-2">25 APR<br>2016</b>
+								</div>
+							</div>
+							<div class="info">
+								<h3 class="bold-3 fs16 f-1 mr-b-5"><a href="#" target="_blank">Night Support Worker</a></h3>
+								<p class="mr-b-10">Working at West means having an opportunity to work by the side of our patients and customers, our global team members and the communities in which we operate – which all help contribute to a Healthier World.</p>
+								<a href="#" class="txt-upper btn btn-default mini bdr-glass">Read more <i class="fas fa-chevron-circle-right mr-l-10"></i></a>
+							</div>
+						</div><!-- / info box -->
+
+						<hr class="mr-tb-30 light">
+
+						<div class="info-obj img-l mid g30" data-ckav-sm="img-t">
+							<div class="img align-c bdr-1 bdr-op-light-2 pd-10 max-px-w100">
+								<div class="min-px-w70">
+									<i class="pe-7s-paper-plane fs40"></i>
+									<hr class="mr-tb-10 light">
+									<b class="fs12 bold-1 f-2">25 APR<br>2016</b>
+								</div>
+							</div>
+							<div class="info">
+								<h3 class="bold-3 fs16 f-1 mr-b-5"><a href="#" target="_blank">Manufacturing & Operations</a></h3>
+								<p class="mr-b-10">Korn Ferry is a global organizational consulting firm. We help clients synchronize strategy and talent to drive superior performance. We work with organizations to design their structures, roles, and responsibilities. We help them hire the right people to bring their strategy to life. And we advise them on how to reward, develop, and motivate their people.</p>
+								<a href="#" class="txt-upper btn btn-default mini bdr-glass">Read more <i class="fas fa-chevron-circle-right mr-l-10"></i></a>
+							</div>
+						</div><!-- / info box -->
+
+						<hr class="mr-tb-30 light">
+
+						<div class="info-obj img-l mid g30" data-ckav-sm="img-t">
+							<div class="img align-c bdr-1 bdr-op-light-2 pd-10 max-px-w100">
+								<div class="min-px-w70">
+									<i class="pe-7s-paper-plane fs40"></i>
+									<hr class="mr-tb-10 light">
+									<b class="fs12 bold-1 f-2">25 APR<br>2016</b>
+								</div>
+							</div>
+							<div class="info">
+								<h3 class="bold-3 fs16 f-1 mr-b-5"><a href="#" target="_blank">Sheet Metal Worker</a></h3>
+								<p class="mr-b-10">Senior position, work with management to co-ordinate work.
+
+Supervise, Train and direct factory staff.
+
+Position would suit person looking to progress their career.
+
+Job Types: Full-time, Permanent</p>
+								<a href="#" class="txt-upper btn btn-default mini bdr-glass">Read more <i class="fas fa-chevron-circle-right mr-l-10"></i></a>
+							</div>
+						</div><!-- / info box -->
+
+						<hr class="mr-tb-30 light">
+
+						<div class="info-obj img-l mid g30" data-ckav-sm="img-t">
+							<div class="img align-c bdr-1 bdr-op-light-2 pd-10 max-px-w100">
+								<div class="min-px-w70">
+									<i class="pe-7s-paper-plane fs40"></i>
+									<hr class="mr-tb-10 light">
+									<b class="fs12 bold-1 f-2">25 APR<br>2016</b>
+								</div>
+							</div>
+							<div class="info">
+								<h3 class="bold-3 fs16 f-1 mr-b-5"><a href="#" target="_blank">Apprentice Electrician</a></h3>
+								<p class="mr-b-10">We require brand new candidates and already registered apprentice electricians for a busy factory based environment and site work on a full-time basis. There is also scope for work within different environments i.e. site, factory etc.</p>
+								<a href="#" class="txt-upper btn btn-default mini bdr-glass">Read more <i class="fas fa-chevron-circle-right mr-l-10"></i></a>
+							</div>
+						</div><!-- / info box -->
+
+					</div>
+					<!-- / RIGHT -->
+
+				</div>
+			</div>
+		</section>
+		<!-- / BLOG-SECION -->
+
+		<!-- CONTACT-SCCTION -->
+		<section id="contact" class="pos-rel bg-light pd-tb-medium" data-ckav-sm="pd-tb-small">
+			<div class="container typo-light">
+
+				<div class="align-c mr-b-70">
+					<h2 class="title bold-n f-1" data-ckav-sm="medium">Contact</h2>
+					<p class="title-sub small" data-ckav-sm="small">We would love to hear from you so don't be shy</p>
+				</div>
+
+				<hr class="light mr-tb-50 mr-auto">
+
+				<!-- CONTACT-INFO -->
+				<div class="flex-row align-c row-sep bdr-op-light-1">
+					<div class="flex-col-md-4">
+						<h3 class="title f-1 bold-1 small mr-b-0">Headquarters</h3>
+						<p class="op-05 mr-t-10">8 New Ln, Commons East, Kilcock, <br>Co. Kildare, W23 C867</p>
+					</div>
+					<div class="flex-col-md-4">
+						<h3 class="title f-1 bold-1 small mr-b-0">Phone</h3>
+						<p class="op-05 mr-t-10">00353 892226987,<br>00353 892226987</p>
+					</div>
+					<div class="flex-col-md-4">
+						<h3 class="title f-1 bold-1 small">Connect us on</h3>
+						<div class="social-links mini bdr light">
+							<a href="http://goo.gl/D6tuDk" class="sq30 fs18 inline-flex flex-cc" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="http://goo.gl/D6tuDk" class="sq30 fs18 inline-flex flex-cc" target="_blank"><i class="fab fa-twitter"></i></a>
+							<a href="http://goo.gl/D6tuDk" class="sq30 fs18 inline-flex flex-cc" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+							<a href="http://goo.gl/D6tuDk" class="sq30 fs18 inline-flex flex-cc" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							<a href="http://goo.gl/D6tuDk" class="sq30 fs18 inline-flex flex-cc" target="_blank"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- / CONTACT-INFO -->
+
+				<hr class="light mr-tb-50 mr-auto">
+
+				<div class="flex-row gt50 mb20">
+
+					<!-- LEFT -->
+					<div class="flex-col-md-6">
+						<div class="content">
+
+							<!-- GOOGLE MAP -->
+							<div class="gmap-widget"
+							data-map-height="350"
+							data-map-latitude="-37.817136"
+							data-map-longitude="144.955652"
+							data-map-markerhd="Envato"
+							data-map-markerhtml='<div class="pd-10 align-c"><h2 class="fs18 mr-b-10">Envato</h2><p class="fs16 mr-0">PO Box 16122, Collins Street West,<br>Victoria 8007, Australia</p></div>'>	</div>
+							<!-- / GOOGLE MAP -->
+
+						</div>
+					</div><!-- / LEFT -->
+
+					<!-- RIGHT -->
+					<div class="flex-col-md-6">
+
+						<!-- CONTACT-FORM -->
+						<div id="contact-form" class="form-block">
+							<form action="form-data/formdata.php" class="form-widget" data-success-redirect="y" novalidate="novalidate">
+								<div class="field-wrp">
+									<input type="hidden" name="to" value="r.genesis.art@gmail.com">
+									<div class="flex-row gt20 mb10">
+										<div class="flex-col-md-6">
+											<div class="form-group">
+												<input class="form-control form-control-light light bdr-op-light-2" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" placeholder="Enter your name" aria-required="true">
+											</div>
+										</div>
+										<div class="flex-col-md-6">
+											<div class="form-group">
+												<input class="form-control form-control-light light bdr-op-light-2" data-label="Email" required="" data-msg="Please enter email." type="email" name="email" placeholder="Enter your email" aria-required="true">
+											</div>
+										</div>
+									</div>
+									<div class="flex-row gt20 mb10">
+										<div class="flex-col-md-6">
+											<div class="form-group">
+												<input class="form-control form-control-light light bdr-op-light-2" required="" data-label="Phone" data-msg="Please phone number." type="text" name="phone" placeholder="Enter your phone number" aria-required="true">
+											</div>
+										</div>
+										<div class="flex-col-md-6">
+											<div class="form-group">
+												<input class="form-control form-control-light light bdr-op-light-2" data-label="Subject" required="" data-msg="Please enter subject." type="text" name="subject" placeholder="Enter subject" aria-required="true">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<textarea class="form-control form-control-light light bdr-op-light-2" data-label="Message" required="" data-msg="Please enter your message." name="message" placeholder="Add your message" cols="30" rows="10" aria-required="true"></textarea>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-default txt-upper solid"><i class="fa fa-envelope-o"></i> Submit</button>
+							</form><!-- / form -->
+						</div>
+						<!-- / CONTACT-FORM -->
+
+					</div>
+					<!-- / RIGHT -->
+
+				</div>
+			</div>
+		</section>
+		<!-- / CONTACT-SCCTION -->
+
+		<!-- FOOTER-SECTION -->
+		<footer class="pos-rel pd-tb-small bg-dark" data-ckav-sm="pd-tb-small">
+			<div class="container typo-light" data-ckav-sm="align-c">
+				<div class="flex-row gt40 mb40">
+					<div class="flex-col-md-3">
+						<p><a href="#" class="inline-block max-px-w100"><img src="{%static 'new-images/favicon.png'%}"  alt="logo"></a></p>
+						<p>8 New Ln, Commons East, Kilcock,<br>
+Co. Kildare, W23 C867</p>
+
+						<!-- SOICAL-LINKS -->
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-twitter"></i></a>
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-instagram"></i></a>
+						<!-- / SOICAL-LINKS -->
+
+					</div>
+					<div class="flex-col-md-3">
+						<h2 class="title bold-3 f-1 tiny">Quick links</h2>
+						<ul class="list-1 op-07">
+							<li><a href="{% url 'home'%}#about" class="txt-white">About us</a></li>
+							<li><a href="{% url 'home'%}#contact" class="txt-white">Contact us</a></li>
+							<li><a href="{% url 'home'%}#services" class="txt-white">Services</a></li>
+							<li><a href="{% url 'home'%}#jobalert" class="txt-white">Create job alert</a></li>
+						</ul>
+					</div>
+
+					<div class="flex-col-md-3">
+						<h2 class="title f-1 bold-3 tiny">Recent Vacancies</h2>
+						<p class="fs12 op-07 mr-b-10 bdr-b bdr-op-light-2 light pd-b-10">
+							<em class="op-08">Mar 26, 2016</em><br>
+							<a href="#" target="_blank">Relief Worker</a>
+						</p>
+						<p class="fs12 op-07 mr-b-10 pd-b-10">
+							<em class="op-08">Mar 26, 2016</em><br>
+							<a href="#" target="_blank">Night Support Worker</a>
+						</p>
+					</div>
+
+					<div class="flex-col-md-3">
+						<h2 class="title f-1 bold-3 tiny">Newsletter</h2>
+						<p class="op-07">Subscribe for our monthly newsletter to stay updated</p>
+
+						<!-- NEWSLETTER -->
+						<div class="subscribe-block _1 small">
+							<form action="form-data/notify-me.php" class="form-widget" data-formtype="newsletter">
+								<div class="form-group">
+									<button type="submit" data-loading-text="Pleae wait.." class="btn btn-default bdr-glass"><i class="fas fa-long-arrow-alt-right fs20"></i></button>
+									<input class="form-control form-control-light w100 bdr-op-light-2" data-label="Email" data-msg="Please enter email." type="email" name="email" placeholder="Enter your email">
+								</div>
+							</form>
+						</div>
+						<!-- / NEWSLETTER -->
+
+					</div>
+				</div>
+
+				<hr class="light">
+				<p class="mr-0 op-05"><a href="#" target="_blank">RM</a> &copy; <span class="copyright-year"></span></p>
+			</div>
+		</footer>
+		<!-- / FOOTER-SECTION -->
+
+	</div>
+	<!-- / MAIN-WRAPPER -->
+
+
+
+	<!-- LIB -->
+	<script type="text/javascript" src="{%static 'js/web-fonts.js'%}"></script>
+	<script type="text/javascript" src="{%static 'lib/jquery/jquery-1.12.4.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'lib/bootstrap/bootstrap-v3.3.7/js/bootstrap.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'lib/jquery-validation/jquery.validate.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/plugins.js'%}"></script>
+
+	<!-- TEMPLATE -->
+	<script type="text/javascript" src="{%static 'js/ckav-template.js'%}"></script>
+
+</body>
+</html>

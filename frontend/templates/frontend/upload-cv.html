@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+{% load static%}
+<!--
+***************************************************************
+AUTHOR : CKavArt
+PROJECT : Ira One Page Creative HTML Template
+
+NOTE : This file licensed to CKavArt - https://themeforest.net/user/c-kav and it is strictly prohibited to copy or reuse it.
+
+Copyright 2017-2018 CKavArt
+***************************************************************
+-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=""/>
+	<meta name="keywords" content="">
+	<meta name="author" content="CKavArt">
+
+	<title>RM - The Human Resource Management Ltd</title>
+
+	<!-- FONT-ICONS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/et-line-font/style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/Icon-font-7-stroke-PIXEDEN/css/pe-icon-7-stroke.css'%}">
+
+	<!-- LIB -->
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/animation/animate.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/page-animsition/css/animsition.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/owl-carousel/owl.carousel.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/sweetalert/sweetalert.css'%}">
+
+	<!-- TEMPLATE -->
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/bootstrap/bootstrap-v3.3.7/css/bootstrap.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/ckav-grids.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/helper.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css'%}">
+
+	<!-- THEMES -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/themes/default.css'%}">
+
+	<!-- CUSTOME -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/custom.css'%}">
+
+	<!-- Favicons -->
+	<link rel="icon" href="{% static 'new-images/favicon.png'%}">
+	<link rel="icon apple-touch-icon" type="image/png" href="{% static 'images/favicons/apple-icon.png'%}">
+	<link rel="icon apple-touch-icon" type="image/png" sizes="72x72" href="{% static 'images/favicons/apple-icon-72x72.png'%}">
+	<link rel="icon apple-touch-icon" type="image/png" sizes="114x114" href="{% static 'images/favicons/apple-icon-114x114.png'%}">
+  <!-- Google recapcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+	<!-- MAIN-WRAPPER -->
+	<div class="ckav-mainwrapper">
+
+		<!-- HEADER -->
+		<header style="//background:#002A3A" class="main-head dark bg-glass-dark-01" data-sticky="y">
+			<div class="container flex-cc min-px-h80">
+
+				<div class="flex-row gt0 middle-md w100">
+
+					<!-- LOGO -->
+					<div class="flex-col-md-3 pos-rel">
+						<a class="nav-handle" data-nav=".m-content" data-navopen="pe-7s-more" data-navclose="pe-7s-close"><i class="pe-7s-more"></i></a>
+						<div class="header-logo-wrp">
+							<a class="header-logo pd-tb-small" href="{% url 'home'%}"><img src="{% static 'new-images/logo.png' %}" alt="Brand logo"></a>
+						</div>
+					</div>
+					<!-- / LOGO -->
+
+					<!-- NAVIGATION -->
+					<div class="flex-col-md-9 align-r m-content">
+						<ul class="inline-grid grid-mid">
+
+							<!-- NAVIGATION-LINKS -->
+							<li>
+                <nav class="align-l">
+									<ul class="menu">
+										<li class="menu-item"><a href="{% url 'home'%}#about">About us</a></li>
+										<li class="menu-item"><a href="{% url 'home'%}#services">Services</a></li>
+										<li class="menu-item"><a href="{% url 'home'%}#story">Our story</a></li>
+										<li class="menu-item"><a href="{% url 'home'%}#team">Team</a></li>
+										<li class="menu-item"><a href="{% url 'home'%}#vacancies">Vacancies</a></li>
+
+									</ul>
+								</nav>
+							</li><!-- / NAVIGATION-LINKS -->
+
+              <!-- NAVIGATION-BUTTONS -->
+							<li class="pd-l-20 menu-item" data-ckav-sm="pd-0 pd-t-10 align-c">
+								<a href="{% url 'home'%}#contact" class="btn btn-white mini mr-r-6" data-ckav-sm="block mr-0"><i class="far fa-envelope-open mr-r-6"></i> CONTACT US</a>
+								<a href="{% url 'upload_cv'%}" class="btn btn-default solid mini" data-ckav-sm="block"><i class="pe-7s-cloud-upload mr-r-6"></i> Upload your CV</a>
+							</li>
+							<!-- / NAVIGATION-BUTTONS -->
+
+						</ul>
+
+					</div>
+					<!-- / NAVIGATION -->
+
+				</div>
+
+			</div>
+
+		</header>
+		<!-- / HEADER -->
+
+		<!-- PAGE-HEADING -->
+		<header class="pos-rel pd-t-large" data-ckav-sm="pd-tb-small">
+			<div class="container small typo-light pos-rel z2">
+				<div class="w75 mr-auto content align-c mr-b-small" data-ckav-sm="mr-0">
+					<h1 class="title f-1 bold-3 large" data-ckav-sm="medium">{{ title }}</h1>
+					<p class="title-sub small" data-ckav-sm="small">Send us your latest CV</p>
+
+					<div class="fs12 pd-tb-5 pd-lr-tiny inline-block rd-30 bg-glass-dark-05">
+						<a href="{% url 'home'%}" class="txt-white">Home</a>
+						<b class="mr-lr-5"> / </b>
+						<a href="#" class="txt-white">Upload CV</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-bg-holder full-wh z1">
+				<b data-bg-holder="overlay" class="full-wh z2" data-gradient="y" data-g-colors="rgba(0, 104, 251, 0.75)|rgba(0, 59, 167, 0.9)"></b>
+				<b data-bg-holder="bg-img" data-bg="images/about-img-01.jpg" data-stellar="y" data-stellar-ratio="0.8" data-ckav-sm="h100" class="full-vh bg-cover bg-cc bg-dark"></b>
+			</div>
+		</header>
+		<!-- / PAGE-HEADING -->
+
+		<!-- GOOGLE MAP -->
+		<div class="gmap-widget"
+			data-map-height="600"
+			data-map-latitude="-37.817136"
+			data-map-longitude="144.955652"
+			data-map-markerhd="Envato"
+			data-map-markerhtml='<div class="pd-10 align-c"><h2 class="fs18 mr-b-10">Envato</h2><p class="fs16 mr-0">PO Box 16122, Collins Street West,<br>Victoria 8007, Australia</p></div>'>
+		</div>
+		<!-- / GOOGLE MAP -->
+
+		<!-- CONTACT FORM -->
+		<section class="pd-tb-small" data-ckav-sm="pd-tb-small align-c" id="contact">
+			<div class="container">
+				<div class="flex-row gt20 mb20 middle-md">
+
+					<!-- LEFT -->
+					<div class="flex-col-md-6">
+
+						<!-- CONTACT FORM -->
+						<div class="form-block bg-gray rd-10 pd-mini" data-ckav-sm="pd-20">
+							<h2 class="title f-1 bold-3 small mr-b-20 bold-n" data-ckav-sm="small align-c">Drop us a line</h2>
+							<form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+								<div class="">
+									<input type="hidden" name="to" value="r.genesis.art@gmail.com">
+									<div class="form-group">
+										<input class="form-control bg-white" data-label="Name" required data-msg="Please enter name." type="text" name="name" placeholder="Enter your name">
+									</div>
+									<div class="form-group">
+										<input class="form-control bg-white" data-label="Email" required data-msg="Please enter email." type="email" name="email" placeholder="Enter your email">
+									</div>
+									<div class="form-group">
+										<input class="form-control bg-white" required data-label="Phone" data-msg="Please phone number." type="text" name="phone" placeholder="Enter your phone number">
+									</div>
+									<div class="form-group">
+										<textarea class="form-control bg-white" data-label="Message" required data-msg="Please enter your message." name="message" placeholder="Add your message" cols="30" rows="10"></textarea>
+									</div>
+                  <div class="form-group">
+										<input class="form-control bg-white" required type="file" name="upload_cv">
+									</div>
+
+                  <div class="form-group">
+										<div class="g-recaptcha" data-sitekey="6LcHzzAaAAAAAPv3wPIFM3h6gkatod5P4nvJIvrs"></div>
+									</div>
+
+								</div>
+								<button type="submit" class="btn solid btn-dark"><i class="fa fa-envelope-o"></i> SUBMIT</button>
+							</form>
+						</div>
+						<!-- / CONTACT FORM -->
+
+					</div>
+					<!-- LEFT -->
+
+					<!-- RIGHT -->
+					<div class="flex-col-md-5 flex-col-md-offset-1">
+
+						<h2 class="title bold-3 f-1 small" data-ckav-sm="medium">Contact information</h2>
+						<p class="mr-b-mini">We welcome your feedback which you can submit here</p>
+
+						<!-- CONTACT-INFO -->
+						<div class="info-obj img-l g20 tiny mr-0" data-ckav-sm="img-t">
+							<div class="img txt-dark"><span class="iconwrp"><i class="pe-7s-map-marker"></i></span></div>
+							<div class="info">
+								<h3 class="title f-1 mini mr-b-4 bold-n">Address</h3>
+								<p class="mr-0">8 New Ln, Commons East, Kilcock, <br>Co. Kildare, W23 C867</p>
+							</div>
+						</div>
+						<!-- / CONTACT-INFO -->
+
+						<hr>
+
+						<!-- CONTACT-INFO -->
+						<div class="info-obj img-l g20 tiny mr-0" data-ckav-sm="img-t">
+							<div class="img txt-dark"><span class="iconwrp"><i class="pe-7s-call"></i></span></div>
+							<div class="info">
+								<h3 class="title f-1 mini mr-b-4 bold-n">Phone</h3>
+								<p class="mr-0"><strong>Office : </strong> +353895647158,<br> <strong>Office : </strong> +353895647158</p>
+							</div>
+						</div>
+						<!-- / CONTACT-INFO -->
+
+						<hr>
+
+						<!-- CONTACT-INFO -->
+						<div class="info-obj img-l g20 tiny mr-0" data-ckav-sm="img-t">
+							<div class="img txt-dark"><span class="iconwrp"><i class="pe-7s-mail"></i></span></div>
+							<div class="info">
+								<h3 class="title f-1 mini mr-b-4 bold-n">Email</h3>
+								<p class="mr-0"><a href="#">info@rm-hrm.com</a><br><a href="#">support@rm-hrm.com</a></p>
+							</div>
+						</div><!-- / CONTACT-INFO -->
+
+					</div>
+					<!-- / RIGHT -->
+
+				</div>
+			</div>
+		</section>
+		<!-- / CONTACT FORM -->
+
+    <!-- FOOTER-SECTION -->
+		<footer class="pos-rel pd-tb-small bg-dark" data-ckav-sm="pd-tb-small">
+			<div class="container typo-light" data-ckav-sm="align-c">
+				<div class="flex-row gt40 mb40">
+					<div class="flex-col-md-3">
+						<p><a href="#" class="inline-block max-px-w100"><img src="{%static 'new-images/favicon.png'%}"  alt="logo"></a></p>
+						<p>8 New Ln, Commons East, Kilcock,<br>
+Co. Kildare, W23 C867</p>
+
+						<!-- SOICAL-LINKS -->
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-twitter"></i></a>
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#" target="_blank" class="sq30 fs16 mr-r-4 rd-4 iconbox btn-white"><i class="fab fa-instagram"></i></a>
+						<!-- / SOICAL-LINKS -->
+
+					</div>
+					<div class="flex-col-md-3">
+						<h2 class="title bold-3 f-1 tiny">Quick links</h2>
+						<ul class="list-1 op-07">
+							<li><a href="{% url 'home'%}#about" class="txt-white">About us</a></li>
+							<li><a href="{% url 'home'%}#contact" class="txt-white">Contact us</a></li>
+							<li><a href="{% url 'home'%}#services" class="txt-white">Services</a></li>
+							<li><a href="{% url 'home'%}#jobalert" class="txt-white">Create job alert</a></li>
+						</ul>
+					</div>
+
+					<div class="flex-col-md-3">
+						<h2 class="title f-1 bold-3 tiny">Recent Vacancies</h2>
+						<p class="fs12 op-07 mr-b-10 bdr-b bdr-op-light-2 light pd-b-10">
+							<em class="op-08">Mar 26, 2016</em><br>
+							<a href="#" target="_blank">Relief Worker</a>
+						</p>
+						<p class="fs12 op-07 mr-b-10 pd-b-10">
+							<em class="op-08">Mar 26, 2016</em><br>
+							<a href="#" target="_blank">Night Support Worker</a>
+						</p>
+					</div>
+
+					<div class="flex-col-md-3">
+						<h2 class="title f-1 bold-3 tiny">Newsletter</h2>
+						<p class="op-07">Subscribe for our monthly newsletter to stay updated</p>
+
+						<!-- NEWSLETTER -->
+						<div class="subscribe-block _1 small">
+							<form action="form-data/notify-me.php" class="form-widget" data-formtype="newsletter">
+								<div class="form-group">
+									<button type="submit" data-loading-text="Pleae wait.." class="btn btn-default bdr-glass"><i class="fas fa-long-arrow-alt-right fs20"></i></button>
+									<input class="form-control form-control-light w100 bdr-op-light-2" data-label="Email" data-msg="Please enter email." type="email" name="email" placeholder="Enter your email">
+								</div>
+							</form>
+						</div>
+						<!-- / NEWSLETTER -->
+
+					</div>
+				</div>
+
+				<hr class="light">
+				<p class="mr-0 op-05"><a href="#" target="_blank">RM</a> &copy; <span class="copyright-year"></span></p>
+			</div>
+		</footer>
+		<!-- / FOOTER-SECTION -->
+
+	</div>
+	<!-- / MAIN-WRAPPER -->
+
+
+
+	<!-- LIB -->
+	<script type="text/javascript" src="{%static 'js/web-fonts.js'%}"></script>
+	<script type="text/javascript" src="{%static 'lib/jquery/jquery-1.12.4.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'lib/bootstrap/bootstrap-v3.3.7/js/bootstrap.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'lib/jquery-validation/jquery.validate.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/plugins.js'%}"></script>
+
+	<!-- TEMPLATE -->
+	<script type="text/javascript" src="{%static 'js/ckav-template.js'%}"></script>
+
+</body>
+</html>
