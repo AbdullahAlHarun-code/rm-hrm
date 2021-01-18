@@ -20,17 +20,18 @@ def upload_cv(request):
         fs.save(upload_file.name, upload_file)
 
         # recapcha
-        clientKey = request.POST['g-recapcha-response']
-        secretKey = ''
-        capchaData = {
-            'secret':secretKey,
-            'response':clientKey,
-        }
-        r = request.post('', data=capchaData)
-        response = json.loads(r.text)
-        verify = response['success']
-        if verify:
-            title = '! Your CV uploaded successfully.'
+        # clientKey = request.POST['g-recapcha-response']
+        # secretKey = ''
+        # capchaData = {
+        #     'secret':secretKey,
+        #     'response':clientKey,
+        # }
+        # r = request.post('', data=capchaData)
+        # response = json.loads(r.text)
+        # verify = response['success']
+        # if verify:
+        #     title = '! Your CV uploaded successfully.'
+        title = '! Your CV uploaded successfully.'
 
     context = {
         'title':title,
