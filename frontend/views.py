@@ -10,6 +10,7 @@ def index(request):
     }
     return render(request, "frontend/index.html", context)
 
+# upload cv module
 def upload_cv(request):
     title = 'Upload Your CV'
     if request.method == 'POST':
@@ -30,7 +31,7 @@ def upload_cv(request):
         verify = response['success']
         if verify:
             title = '! Your CV uploaded successfully.'
-            
+
     context = {
         'title':title,
     }
